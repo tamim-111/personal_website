@@ -1,16 +1,180 @@
-<!doctype html>
-<html lang="en" data-theme="light">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md. Tamim</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md. Tamim Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav
+        class="bg-gray-900 text-white py-4 px-4 md:px-6 flex flex-col md:flex-row justify-between items-center shadow-md sticky top-0 z-50 space-y-4 md:space-y-0">
+        <h1 class="text-2xl font-bold">Md. Tamim</h1>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#skills" class="hover:text-blue-400">Skills</a>
+            <a href="#projects" class="hover:text-blue-400">Projects</a>
+            <a href="#experience" class="hover:text-blue-400">Experience</a>
+            <a href="#education" class="hover:text-blue-400">Education</a>
+            <a href="#achievements" class="hover:text-blue-400">Achievements</a>
+            <a href="#contact" class="hover:text-blue-400">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="hero min-h-screen"
+            style="background-image: url('https://c4.wallpaperflare.com/wallpaper/632/34/549/technology-monitor-alpha-coders-binary-wallpaper-preview.jpg');">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center">
+                <div class="max-w-md">
+                    <img src="https://i.ibb.co/0R6CRJCN/myImage.jpg" alt="Md. Tamim"
+                        class="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto mb-6 border-4 border-white">
+                    <h1 class="mb-3 text-4xl font-bold">Hi, I'm Md. Tamim</h1>
+                    <p class="mb-5 text-lg">Frontend Developer | CSE Student</p>
+                    <a href="/Resume of Md. Tamim.pdf" download="Md-Tamim-Resume.pdf">
+                        <button class="btn btn-primary">Download Resume</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="px-4 md:px-6 py-12 bg-gray-100">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+                <h3 class="font-semibold">Front-End Development</h3>
+                <ul class="list-disc list-inside">
+                    <li>HTML5, CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React.js, React Router</li>
+                    <li>Tailwind CSS, DaisyUI</li>
+                    <li>Firebase Authentication</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold">Tools & Technologies</h3>
+                <ul class="list-disc list-inside">
+                    <li>VS Code, Chrome DevTools</li>
+                    <li>REST API Integration</li>
+                    <li>LocalStorage & React Context API</li>
+                    <li>Deployment: Vercel, Netlify</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold">Soft Skills</h3>
+                <ul class="list-disc list-inside">
+                    <li>Strong Communication & Collaboration</li>
+                    <li>Time Management</li>
+                    <li>Problem Solving</li>
+                    <li>Adaptability</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="px-4 md:px-6 py-12">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">Projects</h2>
+        <div class="space-y-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+                <h3 class="text-xl font-semibold">Recipe Book</h3>
+                <p>A personal recipe manager with add, edit, delete, like, and filter features.</p>
+                <p class="text-sm">Tech Stack: HTML, Tailwind CSS, DaisyUI, React, Firebase, Node.js, Express.js,
+                    MongoDB</p>
+                <a href="https://assignment-10-72e11.web.app/" class="text-blue-500">Live</a> | <a
+                    href="https://github.com/tamim-111/assignment_10" class="text-blue-500">Code</a>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold">PayKash</h3>
+                <p>A bill payment app using React Context for real-time updates.</p>
+                <p class="text-sm">Tech Stack: HTML, Tailwind CSS, DaisyUI, React, Firebase</p>
+                <a href="https://assignment-9-bfdb7.web.app/" class="text-blue-500">Live</a> | <a
+                    href="https://github.com/tamim-111/assignment-9" class="text-blue-500">Code</a>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold">LawBd</h3>
+                <p>A lawyer directory with search, filter, and authentication features.</p>
+                <p class="text-sm">Tech Stack: HTML, Tailwind CSS, DaisyUI, React, Firebase</p>
+                <a href="https://tamim-111-a8-lawbd.surge.sh/" class="text-blue-500">Live</a> | <a
+                    href="https://github.com/tamim-111/assignment-8" class="text-blue-500">Code</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="px-4 md:px-6 py-12 bg-gray-100 text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">Experience</h2>
+        <div class="space-y-4">
+            <h3 class="text-xl font-semibold">Team Member at Chatime Bangladesh (Oct 2023 – Jul 2024)</h3>
+            <a href="https://drive.google.com/drive/folders/1YxeIn4MOeR8qGx-ZuwNziC6Rq9NTNQ_b"
+                class="text-blue-500">Experience Details</a>
+            <ul class="list-disc list-inside mt-2">
+                <li>Brewing teas and preparing drinks</li>
+                <li>Provided excellent customer service</li>
+                <li>Collaborated effectively with team members</li>
+                <li>Managed inventory and COGS efficiently</li>
+                <li>Checked stocked products daily for safety</li>
+                <li>Handled cash with integrity</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="px-4 md:px-6 py-12 text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">Education</h2>
+        <ul class="list-disc list-inside">
+            <li>BSc in CSE, Uttara University (Ongoing)</li>
+            <li>HSC in Science, Govt. Shaheed Suhrawardy College (2022)</li>
+            <li>SSC in Science, Pogose Laboratory School and College (2020)</li>
+        </ul>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="px-4 md:px-6 py-12 bg-gray-100 text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">Achievements & Certifications</h2>
+        <ul class="list-disc list-inside">
+            <li>Collaborated on 6 Chatime video projects, one gained 3.1M views<br>
+                <a href="https://www.facebook.com/reel/896260478430005" class="text-blue-500">3.1M Views Video</a> |
+                <a href="https://drive.google.com/drive/folders/1Q1JLjhTEeaJVlpSi4kLuyLYM9eTtFoF7?usp=drive_link"
+                    class="text-blue-500">All Videos</a>
+            </li>
+            <li>Best Effort Award – Robotics Tournament at University of Scholars<br>
+                <a href="https://drive.google.com/drive/folders/14VliENWl9LDwZNM9rj70JYqfcIPKwBNW"
+                    class="text-blue-500">Award Details</a>
+            </li>
+            <li>Typing Speed Certificate: <a
+                    href="https://www.typing.com/apiv1/student/tests/317214108/140474380/certificate?language=en"
+                    class="text-blue-500">View Certificate</a></li>
+            <li>Robotics Tournament Certificate: <a
+                    href="https://drive.google.com/file/d/1RN1cMmOWsNxAvPdmuSC9IpNKgjQi0gl-/view?usp=sharing"
+                    class="text-blue-500">View Certificate</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-gray-900 text-white px-4 py-8 text-center">
+        <p class="break-words">Phone: 01308414889 | Email: contact2tamim@gmail.com</p>
+        <p><a href="https://www.linkedin.com/in/tamim-muhammad/" class="text-blue-400">LinkedIn</a></p>
+        <p class="mt-4 font-semibold">References:</p>
+        <p class="break-words">Nabin Uhhan – R&D Manager, Chatime Bangladesh | Email: nabinuhhan1884@gmail.com</p>
+        <p class="break-words">Professor Dr. Mirza Golam Rabbani – Dean, Uttara University | Email: rabbani@uttara.ac.bd
+        </p>
+        <p class="break-words">Dr Mohammad Amanul Islam – Chairman, Uttara University | Email:
+            amanul.islam@uttarauniversity.edu.bd</p>
+        <p class="text-sm mt-4">© <span id="year"></span> Md. Tamim. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
