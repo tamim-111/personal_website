@@ -39,7 +39,7 @@ function App() {
                   Frontend Developer | CSE Student
                 </p>
                 <a
-                  href="../src/Resume of Md. Tamim.pdf"  // <-- replace this with your actual file path
+                  href="/Resume of Md. Tamim.pdf"
                   download="Md-Tamim-Resume.pdf"
                 >
                   <button className="btn btn-primary">Download Resume</button>
